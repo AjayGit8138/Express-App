@@ -1,5 +1,4 @@
-//post connection.js
-// const obj2 = require('./settable');
+
 const connection = require('express');
 const bodyparser = require('body-parser');
 const app = connection();
@@ -59,7 +58,7 @@ app.get('/', function (request, response) {
       
         console.log('Patient Data added successfully'); 
         patientobject = JSON.parse(data);
-        // obj2.valpool(patientobject);
+        
       });
     // response.end(JSON.stringify(patient));
     
